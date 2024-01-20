@@ -50,7 +50,7 @@ class LockerLogManager:
             print(f'Error downloading Google Sheet: {response.status_code}')
             sys.exit(1)
 
-    def download_raw_csv(self, rawDir='tmp/', spreadsheet_id='1Qbeqv0YzUknwhq8TibyalEKL1Tn5_0CUgHslFNZ33R8'):
+    def download_raw_csv(self, rawDir='tmp/', spreadsheet_id=''):
         os.makedirs(rawDir, exist_ok=True)
         self._getGoogleSheet(spreadsheet_id, rawDir, self.name_csv)
 
