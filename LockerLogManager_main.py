@@ -26,7 +26,7 @@ class LockerLogManager:
     # Declare final file name with timestamp
     ct = datetime.datetime.now()
     path_excel = "out/szafka_log_{}_{}_{}.xlsx".format(ct.day, ct.month, ct.year)
-    name_csv = "raw_locker_log_{}_{}_{}.csv".format(ct.day, ct.month, ct.year)
+    name_csv = "raw_locker_log.csv".format(ct.day, ct.month, ct.year)
 
     def __init__(self):
         self.download_raw_csv()  # download source document in csv form
